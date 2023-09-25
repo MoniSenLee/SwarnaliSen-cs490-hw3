@@ -1,8 +1,9 @@
 import Post from 'src/components/Post/Post'
 
 export const QUERY = gql`
-  query FindPostById($id: Int!) {
-    post: post(id: $id) {
+  
+  query POSTS {
+    posts: adminPosts {
       id
       title
       body
